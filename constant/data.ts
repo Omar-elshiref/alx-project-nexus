@@ -1,15 +1,34 @@
 import { Facebook, Github, Linkedin, Slack, Youtube } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { ContactItemData, socialLinkData, LinksData } from "@/interface/Index";
 
-
-export const headerData = [
+export const headerData: LinksData[] = [
     { title: "Home", href: "/" },
     { title: "Shop", href: "/shop" },
     { title: "Blog Us", href: "/blog" },
-    // { title: "Contact", href: "/contact" },
     { title: "Hot Deal", href: "/deal" },
+    // { title: "Contact", href: "/contact" },
 ]
 
-export const socialLink = [
+export const quickLinksData: LinksData[] = [
+  { title: "About us", href: "/about" },
+  { title: "Contact us", href: "/contact" },
+  { title: "Terms & Conditions", href: "/terms" },
+  { title: "Privacy Policy", href: "/privacy" },
+  { title: "FAQs", href: "/faqs" },
+  { title: "Help", href: "/help" },
+];
+export const categoriesData: LinksData[] = [
+  { title: "Mobiles", href: "mobiles" },
+  { title: "Appliances", href: "appliances" },
+  { title: "Smartphones", href: "smartphones" },
+  { title: "Air Conditioners", href: "air-conditioners" },
+  { title: "Washing Machine", href: "washing-machine" },
+  { title: "Kitchen Appliances", href: "kitchen-appliances" },
+  { title: "gadget accessories", href: "gadget-accessories" },
+];
+
+export const socialLink : socialLinkData[] = [
   {
     title: "Youtube",
     href: "https://www.youtube.com/@reactjsBD",
@@ -39,5 +58,35 @@ export const socialLink = [
     href: "https://www.youtube.com/@reactjsBD",
     icon: Slack,
     iconProps: { className: "w-5 h-5" },
+  },
+];
+
+export const dataTopFooter: ContactItemData[] = [
+  {
+    title: "Visit Us",
+    subtitle: "New Orlean, USA",
+    icon: MapPin, 
+    iconProps: { className:"h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" },
+  },
+  {
+    title: "Call Us",
+    subtitle: "+12 958 648 597",
+    icon: Phone,
+    iconProps: { className:"h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" },
+    
+  },
+  {
+    title: "Working Hours",
+    subtitle: "Mon - Sat: 10:00 AM - 7:00 PM",
+    icon: Clock,
+    iconProps: {className:"h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" },
+    
+  },
+  {
+    title: "Email Us",
+    subtitle: "Shopcart@gmail.com",
+    icon: Mail,
+    iconProps: {className:"h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" },
+
   },
 ];
