@@ -1,6 +1,6 @@
 import { Facebook, Github, Linkedin, Slack, Youtube } from "lucide-react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { ContactItemData, socialLinkData, LinksData } from "@/interface/Index";
+import { ContactItemData, socialLinkData, LinksData, ProductType } from "@/interface/Index";
 
 export const headerData: LinksData[] = [
     { title: "Home", href: "/" },
@@ -26,6 +26,13 @@ export const categoriesData: LinksData[] = [
   { title: "Washing Machine", href: "washing-machine" },
   { title: "Kitchen Appliances", href: "kitchen-appliances" },
   { title: "gadget accessories", href: "gadget-accessories" },
+];
+
+export const productType: ProductType[] = [
+  { title: "Gadget", value: "gadget" },
+  { title: "Appliances", value: "appliances" },
+  { title: "Refrigerators", value: "refrigerators" },
+  { title: "Others", value: "others" },
 ];
 
 export const socialLink : socialLinkData[] = [
