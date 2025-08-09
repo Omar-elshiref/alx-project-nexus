@@ -1,11 +1,22 @@
 import Link from "next/link";
 import { Heart } from "lucide-react";
-const FavoriteButton = () => {
+import { Product } from "@/sanity.types";
+const FavoriteButton = ({showProduct = false, product}: {showProduct?: boolean, product?: Product | null | undefined}) => {
   return (
-    <Link href="/#" className="group relative">
+   <>
+    {!showProduct ? (
+       <Link href="/wishlist" className="group relative">
         <Heart  className="w-5 h-5 hover:text-shop_light_green hoverEffect"/>
         <span className="absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-shop_light_green text-[10px] text-white">0</span>
-    </Link>
+        </Link>
+    ): (
+      <button className="group relative hover:text-shop_light_green hoverEffect border border-shop_light_green/80 hover:border-shop_light_green p-1.5 rounded-sm">
+        <Heart
+              className="text-shop_light_green/80 group-hover:text-shop_light_green hoverEffect mt-0.5 w-5 h-5"
+            />
+      </button>
+    )}
+   </>
   )
 }
 
