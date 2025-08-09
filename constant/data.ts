@@ -126,3 +126,11 @@ export const extraDataBrand : extraDataBrandProps[] = [
     iconProps: { className: "w-15 h-15" },
   },
 ];
+
+export const priceArray = [
+  { title: "Under $100", value: "0-100" },
+  { title: "$100 - $200", value: "100-200" },
+  { title: "$200 - $300", value: "200-300" },
+  { title: "$300 - $500", value: "300-500" },
+  { title: "Over $500", value: "500-10000" },
+];
