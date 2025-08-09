@@ -1,6 +1,8 @@
 import { Facebook, Github, Linkedin, Slack, Youtube } from "lucide-react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { ContactItemData, socialLinkData, LinksData, ProductType } from "@/interface/Index";
+import { ContactItemData, socialLinkData, LinksData, ProductType, extraDataBrandProps } from "@/interface/Index";
+import { GitCompareArrows, Headset, ShieldCheck, Truck } from "lucide-react";
+
 
 export const headerData: LinksData[] = [
     { title: "Home", href: "/" },
@@ -95,5 +97,32 @@ export const dataTopFooter: ContactItemData[] = [
     icon: Mail,
     iconProps: {className:"h-6 w-6 text-gray-600 group-hover:text-primary transition-colors" },
 
+  },
+];
+
+export const extraDataBrand : extraDataBrandProps[] = [
+  {
+    title: "Free Delivery",
+    description: "Free shipping over $100",
+    icon: Truck,
+    iconProps: { className: "w-11 h-11" },
+  },
+  {
+    title: "Free Return",
+    description: "Free shipping over $100",
+    icon: GitCompareArrows,
+    iconProps: { className: "w-11 h-11" },
+  },
+  {
+    title: "Customer Support",
+    description: "Friendly 27/7 customer support",
+    icon: Headset,
+    iconProps: { className: "w-11 h-11" },
+  },
+  {
+    title: "Money Back guarantee",
+    description: "Quality checked by our team",
+    icon: ShieldCheck,
+    iconProps: { className: "w-15 h-15" },
   },
 ];

@@ -42,3 +42,10 @@ export interface AddToCartProps {
   product: Product;
   className?: string;
 }
+
+export interface extraDataBrandProps {
+  title: string;
+  description: string;
+  icon: ElementType;
+  iconProps?: React.HTMLAttributes<SVGElement>;
+}

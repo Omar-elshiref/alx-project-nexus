@@ -4,7 +4,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <body className="font-poppins antialiased">
         {children}
-      
       </body>
     </html>
   );
