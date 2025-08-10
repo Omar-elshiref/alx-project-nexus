@@ -9,7 +9,8 @@ type Props = {
   isSignedIn: boolean;
 };
 
-const HeaderClient = ({ isSignedIn }: Props) => (
+const HeaderClient = ({ isSignedIn }: Props) => {
+  return (
   <div className="w-auto md:w-1/3 flex items-center justify-end gap-5">
     <SearchBar />
     <CartIcon />
@@ -21,6 +22,7 @@ const HeaderClient = ({ isSignedIn }: Props) => (
       {!isSignedIn && <SignIn />}
     </ClerkLoaded>
   </div>
-);
+)
+};
 
 export default HeaderClient;
