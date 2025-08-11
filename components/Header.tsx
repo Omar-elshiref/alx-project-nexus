@@ -30,7 +30,7 @@ export default async function Header() {
           <CartIcon />
           <FavoriteButton />
 
-          {userId && (
+          
             <Link
               href={"/orders"}
               className="group relative hover:text-shop_light_green hoverEffect"
@@ -40,7 +40,7 @@ export default async function Header() {
                 {orders?.length ?? 0}
               </span>
             </Link>
-          )}
+          
 
           {/* 👇 ده جزء الـ Client */}
           <AuthButtons />

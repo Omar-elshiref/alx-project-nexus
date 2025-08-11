@@ -8,13 +8,17 @@ import { getMyOrders } from "@/sanity/queries";
 import { auth } from "@clerk/nextjs/server";
 import { FileX } from "lucide-react";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import React from "react";
+import NoAccess from "@/components/NoAccess";
 
 const OrdersPage = async () => {
   const { userId } = await auth();
+
   if (!userId) {
-    return redirect("/");
+    return (
+      <Container className="py-10">
+        <NoAccess />
+      </Container>
+    );
   }
 
   const orders = await getMyOrders(userId);
