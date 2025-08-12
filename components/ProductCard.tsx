@@ -67,7 +67,7 @@ const ProductCard = ({ product }: { product: Product }) => {
             <p className={`${product?.stock === 0 ? "text-red-600" : "text-shop_light_green font-semibold"}`}>{(product?.stock as number) > 0 ? product?.stock : "Out of Stock"}</p>
         </div>
         <PriceView price={product?.price} discount={product?.discount} className="text-sm" />
-        <AddToCartButton product={product} className="w-36" />
+        <AddToCartButton product={product} className="max-w-36 flex m-auto md:m-0 md:w-36" />
       </div>
     </div>
   );
