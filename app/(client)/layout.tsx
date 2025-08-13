@@ -8,10 +8,10 @@ import {ClerkProvider,} from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - Shopcart nexus project",
-    default: "Shopcart nexus project",
+    template: "%s - Nexus Shop project",
+    default: "Nexus Shop project",
   },
-  description: "Shopcart nexus project, is online store your one stop shop for all your needs",
+  description: "Nexus Shop project, is online store your one stop shop for all your needs",
 };
 
 export default function RootLayout({

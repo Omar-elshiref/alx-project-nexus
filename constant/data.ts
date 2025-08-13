@@ -40,31 +40,31 @@ export const productType: ProductType[] = [
 export const socialLink : socialLinkData[] = [
   {
     title: "Youtube",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.youtube.com",
     icon: Youtube,
     iconProps: { className: "w-5 h-5" },
   },
   {
     title: "Github",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://github.com/Omar-elshiref",
     icon: Github,
     iconProps: { className: "w-5 h-5" },
   },
   {
     title: "Linkedin",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.linkedin.com/in/omar-elsherif95/",
     icon: Linkedin,
     iconProps: { className: "w-5 h-5" },
   },
   {
     title: "Facebook",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.facebook.com/Omar.Elsherif1995/",
     icon: Facebook,
-    iconProps: {},
+    iconProps: { className: "w-5 h-5" },
   },
   {
     title: "Slack",
-    href: "https://www.youtube.com/@reactjsBD",
+    href: "https://www.google.com/",
     icon: Slack,
     iconProps: { className: "w-5 h-5" },
   },
