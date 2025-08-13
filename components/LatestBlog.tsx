@@ -14,7 +14,7 @@ const LatestBlog = async () => {
       <Title>Latest Blog</Title>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
         {blogs?.map((blog : Blog) => (
-          <div key={blog?._id} className="rounded-lg overflow-hidden">
+          <div key={blog?._id} className="rounded-lg overflow-hidden " data-aos="fade-right">
             {blog?.mainImage && (
               <Link href={`/blog/${blog?.slug?.current}`}>
                 <Image

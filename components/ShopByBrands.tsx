@@ -41,7 +41,7 @@ const ShopByBrands = async () => {
                 key={brand?._id}
                 href={{ pathname: "/shop", query: { brand: brand?.slug?.current } }}
                 className="bg-white w-34 h-24 flex items-center justify-center rounded-md overflow-hidden hover:shadow-lg shadow-shop_dark_green/20 hoverEffect"
-            >
+            data-aos="fade-up">
                 {brand?.image && (
                     <Image
                         src={urlFor(brand?.image).url()}
@@ -59,6 +59,7 @@ const ShopByBrands = async () => {
           <div
             key={index}
             className="flex items-center gap-3 group text-lightColor hover:text-shop_light_green"
+            data-aos="fade-down"
           >
             <span className="inline-flex scale-100 group-hover:scale-90 hoverEffect">
               {item?.icon && <item.icon className="w-10 h-10" />}
